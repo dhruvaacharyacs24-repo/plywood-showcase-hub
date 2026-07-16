@@ -38,8 +38,11 @@ function AuthedShell() {
       <header className="border-b border-border bg-background sticky top-0 z-30">
         <div className="container-page flex h-14 items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-2 font-display font-bold">
-            <span className="grid h-7 w-7 place-items-center bg-primary text-primary-foreground text-xs">AE</span>
-            <span className="hidden sm:inline">{SITE.name}</span>
+            <img
+              src={SITE.logo}
+              alt={`${SITE.name} logo`}
+              className="h-7 w-auto object-contain"
+            />
             <span className="text-xs font-medium text-muted-foreground">/ Admin</span>
           </Link>
           <button
