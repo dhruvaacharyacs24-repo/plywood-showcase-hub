@@ -1,8 +1,11 @@
+import logoAsset from "@/assets/logo.png.asset.json";
+
 export const SITE = {
   name: "Aashlesha Enterprises",
   tagline: "Our promise, Your Trust!",
   description:
     "Wholesale & retail supplier of premium plywood, plastics, tarpaulins and interior design materials.",
+  logo: logoAsset.url,
   phone: "+91 00000 00000",
   whatsapp: "+91 00000 00000",
   email: "sales@aashleshaenterprises.com",
