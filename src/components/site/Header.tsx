@@ -17,15 +17,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center bg-primary text-primary-foreground font-display font-bold">
-            AE
-          </span>
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="font-display text-sm font-bold tracking-tight">{SITE.name}</span>
-            <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-              {SITE.tagline}
-            </span>
-          </span>
+          <img
+            src={SITE.logo}
+            alt={`${SITE.name} logo`}
+            className="h-9 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

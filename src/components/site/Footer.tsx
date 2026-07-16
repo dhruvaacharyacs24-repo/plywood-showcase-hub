@@ -8,15 +8,11 @@ export function SiteFooter() {
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center bg-primary text-primary-foreground font-display font-bold">
-              AE
-            </span>
-            <div>
-              <div className="font-display font-bold text-white">{SITE.name}</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-white/60">
-                {SITE.tagline}
-              </div>
-            </div>
+            <img
+              src={SITE.logo}
+              alt={`${SITE.name} logo`}
+              className="h-9 w-auto object-contain"
+            />
           </div>
           <p className="mt-4 max-w-md text-sm text-white/60">{SITE.description}</p>
           <div className="mt-6 flex gap-3">
